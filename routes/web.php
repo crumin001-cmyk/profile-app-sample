@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +17,5 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', function () {
     return view('welcome');
 });
-// 追加：プロフィールページのルート
+// 追加：プロフィールページのルートあ
 Route::get('/profile', [ProfileController::class, 'index']);
